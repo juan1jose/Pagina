@@ -1,0 +1,22 @@
+.navegacion{
+    background-color: rgb(204, 228, 255);
+}
+.efectoHover >ul >li >a:hover{
+    font-size:20px;
+    color: rgb(41, 41, 85);
+}
+/*Clase para el carousel y dar tamaño a las imagenes*/
+
+.caruselzise >div >img{
+    object-fit: fill;
+    height: 500px;
+        
+}
+.cardjart >div >img{
+    height: 300px;
+    object-fit:unset;
+}
+.contenedorImg {
+    display: flex;
+    justify-content: center;
+}

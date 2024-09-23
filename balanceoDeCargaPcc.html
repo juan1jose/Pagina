@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/stylePcc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Balanceo 3-PCC-Mikrotik</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navegacion">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/Logo.png" alt="Logo JartdevTech"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse efectoHover" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./jartdev.html">Que Es Jartdev Tech</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios de configuración Mikrotik
+                </a>
+                <ul class="dropdown-menu efectoHoverDrop">
+                  <li><a class="dropdown-item" href="#">Balanceos de Carga</a></li>
+                 
+                  
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+    
+      
+    
+    
+        <div class="row">
+            <div class="col-4">
+              <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Que es PCC?</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Para que sirve?</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Como configurarlo?</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Beneficios</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">Que es PCC-Mikrotik</h4>
+                <p>PCC (Per Connection Classifier) es una herramienta dentro del sistema operativo RouterOS de MikroTik, que permite clasificar el tráfico de red basado en parámetros como la dirección IP de origen, dirección IP de destino y puertos. Es utilizada principalmente para balancear el tráfico entre varios enlaces de internet.</p>
+                <h4 id="list-item-2">Para que sirve?</h4>
+                <p>El objetivo principal de PCC es el balanceo de carga (load balancing), lo que permite distribuir el tráfico entre varios enlaces WAN de manera equilibrada. Esto garantiza un uso eficiente de los recursos de red y mejora la experiencia del usuario al evitar la saturación de un solo enlace. También se puede utilizar para failover, es decir, redirigir el tráfico a un enlace de respaldo si uno de los enlaces principales falla.</p>
+                <h4 id="list-item-3">Como configurarlo?</h4>
+                <p>Para configurar PCC en MikroTik, debes seguir estos pasos básicos:
+
+                    <p>Crear Mangle Rules: Define reglas de clasificación utilizando el menú IP → Firewall → Mangle. En estas reglas, puedes usar parámetros como la dirección IP o el puerto para clasificar las conexiones.</p><br>
+                    
+                    <p>Marcar las Conexiones: Utiliza las reglas de Mangle para marcar las conexiones según los criterios establecidos, como dirección IP de origen o destino.</p><br>
+                    
+                    <p></p>Asignar rutas: Dirige las conexiones marcadas a través de rutas específicas en el menú IP → Routes. Aquí podrás asignar los diferentes enlaces WAN y definir qué porcentaje del tráfico irá a cada uno.</p><br>
+                    
+                    <p></p>Verificación: Una vez configurado, puedes monitorear el tráfico y las rutas activas para asegurarte de que el balanceo esté funcionando correctamente.</p><br></p>
+                <h4 id="list-item-4">Beneficios</h4>
+                <p>Beneficios
+                    <p></p>Optimización de los recursos de red: Distribuye el tráfico de manera eficiente entre múltiples conexiones WAN.</p><br>
+                    <p>Mejora de la velocidad y estabilidad: Al dividir las conexiones, se evitan sobrecargas en un solo enlace.</p><br>
+                    <p></p>Resiliencia: En caso de falla de un enlace, el tráfico puede redirigirse automáticamente a otro enlace disponible.</p><br>
+                    <p>Flexibilidad: Permite una configuración personalizada para diferentes tipos de tráfico.</p><br>
+                    </p>
+              </div>
+            </div>
+          </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
